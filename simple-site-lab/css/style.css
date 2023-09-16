@@ -1,0 +1,57 @@
+ul {
+    margin-left: -40px;
+}
+
+body {
+    margin: 22px;
+    background-color: #87CEEB;
+    font: 400 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+h1, nav {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 22px;
+}
+
+nav {
+    font: 600 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.inner {
+    border: #48CD31 5px solid;
+}
+
+img {
+    height: 240px;
+    float: right;
+    display: block;
+    margin-right: 44px;
+    padding-left: 40px;
+}
+nav li{
+    display: inline;
+    list-style: none;
+}
+
+a {
+    font-weight: 600;
+    color: #4ACC99;
+}
+
+a:active {
+    color: white;
+}
+
+.currentLink {
+    color: #640200;
+    background-color: #000000;
+ }
+
+p {
+    margin-left: 22px;
+    margin-right: 44px;
+}
