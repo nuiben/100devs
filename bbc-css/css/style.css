@@ -1,0 +1,162 @@
+/* Box Model Hack */
+* {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+     font-family: 'Roboto', sans-serif;
+ }
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+     background-color: black;
+     color: white;
+     height: 55px;
+}
+
+header *{
+     float: left;
+     text-decoration: none;
+     color: white;
+     list-style: none;
+     text-align: center;
+}
+
+header > img {
+     height: 55px;
+     width: 130px;
+}
+
+header > a {
+     width: 13.2%;
+     border-left: solid 1px rgb(79, 79, 79);
+     padding-left: 15px;
+}
+
+a > img {
+     height: 32px;
+     width: 32px;
+     margin: 10px 0;
+     border: solid 1px;
+     border-radius: 50%;
+}
+
+a > p {
+     width: 80%;
+     margin: 18px 0;
+     text-align: left;
+     padding-left: 15px;
+}
+
+nav {
+     width: 52%;
+     padding: 0 0 0 0;
+     margin: 0;
+     height: 100%;
+}
+
+nav > ul {
+     height: 55px;
+}
+
+nav li {
+     float: left;
+     text-align: center;
+     width: 12.5%;
+     height: 100%;
+     margin: 0px 0px;
+     border: solid 1px rgb(79, 79, 79);
+     border-top: none;
+     border-bottom: none;
+     padding-top: 18px;
+}
+
+nav li a {
+     text-align: center;
+     width: 100%;
+}
+
+header > nav + a {
+     width: 11.2%;
+}
+
+header > form {
+     width: 14.6%;
+}
+
+nav ul {
+     width: 100%;
+     padding: 0;
+     margin: 0;
+}
+
+nav form input {
+     width: 20%;
+}
+
+main + section > section{
+     width: 33.3333%;
+     float: left;
+   }
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* Button */
+button {
+     background-color: black;
+}
+
+.dropdown {
+     position: relative;
+     display: inline-block;
+ }
+
+ .dropdown-menu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     z-index: 1;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     background-color: black;
+     min-width: 160px;
+ }
+
+ .dropdown-menu li {
+     list-style-type: none;
+     padding: 8px 16px;
+ }
+
+ .dropdown-menu li a {
+     color: #f9f9f9;
+     text-decoration: none;
+     display: block;
+ }
+
+ .dropdown-menu li a:hover {
+     background-color: #ddd;
+ }
