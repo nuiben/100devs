@@ -154,7 +154,8 @@ main > section.headlines{
 }
 
 main > section.headlines#A1 {
-     background-image: url('../peace.png');
+     padding: 12% 0 0;
+     background-image: url('../assets/images/peace.png');
 }
 
 .headlines.sub > * {
@@ -163,6 +164,7 @@ main > section.headlines#A1 {
      height: 170px;
      background-color: black;
      margin: 1%;
+     padding: 10% 0 0;
 }
 
 main > section.headlines.sub > section {
@@ -171,17 +173,17 @@ main > section.headlines.sub > section {
 }
 
 #B1 {
-     background-image: url('../go-home.png');
+     background-image: url('../assets/images/go-home.png');
 }
 
 #B2 {
-     background-image: url('../pandemic.png');
+     background-image: url('../assets/images/pandemic.png');
 }
 #B3 {
-     background-image: url('../desk-gym.png');
+     background-image: url('../assets/images/desk-gym.png');
 }
 #B4 {
-     background-image: url('../folk-singer.png');
+     background-image: url('../assets/images/folk-singer.png');
 }
 
 .image-wrapper{
