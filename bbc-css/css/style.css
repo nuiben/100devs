@@ -47,28 +47,45 @@ header *{
 
 header > img {
      height: 55px;
-     width: 130px;
+     width: 7.447%;
 }
 
 header > a {
      width: 13.2%;
      border-left: solid 1px rgb(79, 79, 79);
-     padding-left: 15px;
+     padding-left: 1%;
+     height: 100%;
+}
+
+header > div {
+     border-right: solid 1px rgb(79, 79, 79);
+     height: 100%;
+}
+
+header > form {
+     width: 16.152%;
+}
+
+header form input {
+     color: black;
+     margin: 15px 15%;
+     width: 70%;
+     text-align: left;
 }
 
 a > img {
      height: 32px;
      width: 32px;
-     margin: 10px 0;
+     margin: 5% 0;
      border: solid 1px;
      border-radius: 50%;
 }
 
 a > p {
-     width: 80%;
-     margin: 18px 0;
+     width: 40%;
+     height: 55px;
+     padding: 3% 5%;
      text-align: left;
-     padding-left: 15px;
 }
 
 nav {
@@ -94,32 +111,100 @@ nav li {
      padding-top: 18px;
 }
 
-nav li a {
-     text-align: center;
-     width: 100%;
-}
-
-header > nav + a {
-     width: 11.2%;
-}
-
-header > form {
-     width: 14.6%;
-}
-
 nav ul {
      width: 100%;
      padding: 0;
      margin: 0;
 }
 
-nav form input {
-     width: 20%;
+nav li a {
+     text-align: center;
+     width: 100%;
 }
 
-main + section > section{
-     width: 33.3333%;
+header > nav + div {
+     width: 11.2%;
+}
+
+main > * {
      float: left;
+}
+
+section.title{
+     width: 100%;
+     padding-left: 12px;
+}
+
+section.title > *{
+     float: left;
+     width: 50%;
+}
+
+section.title > span {
+     margin: 24px 0;
+     padding-right: 12px;
+     text-align: right;
+}
+
+main > section.headlines{
+     margin: 0 10px;
+     width: 48%;
+     height: 380px;
+     color: white;
+}
+
+main > section.headlines#A1 {
+     background-image: url('../peace.png');
+}
+
+.headlines.sub > * {
+     float: left;
+     width: 40%;
+     height: 170px;
+     background-color: black;
+     margin: 1%;
+}
+
+main > section.headlines.sub > section {
+     width: 48%;
+     background-size: 75%;
+}
+
+#B1 {
+     background-image: url('../go-home.png');
+}
+
+#B2 {
+     background-image: url('../pandemic.png');
+}
+#B3 {
+     background-image: url('../desk-gym.png');
+}
+#B4 {
+     background-image: url('../folk-singer.png');
+}
+
+.image-wrapper{
+     width: 100%;
+     height: 50%;
+     position: relative;
+     background-color: #f0f0f0;
+     overflow: hidden;
+}
+
+footer {
+     clear: both;
+}
+
+footer > section.title.sub {
+     float: left;
+     width: 100%;
+}
+
+footer > section:not(.title){
+     float: left;
+     width: 33.3333%;
+     height: 600px;
    }
 /******************************************
 /* ADDITIONAL STYLES
@@ -128,9 +213,11 @@ main + section > section{
 /* Button */
 button {
      background-color: black;
+     width: 100%;
 }
 
 .dropdown {
+     padding-top: 18px;
      position: relative;
      display: inline-block;
  }
@@ -141,22 +228,33 @@ button {
      top: 100%;
      left: 0;
      z-index: 1;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     box-shadow: 0px 8px 16px 0px rgba(143, 120, 120, 0.2);
      background-color: black;
      min-width: 160px;
+ }
+
+ ul.dropdown-menu{
+     margin: 0;
+     padding: 0 10px;
  }
 
  .dropdown-menu li {
      list-style-type: none;
      padding: 8px 16px;
+     text-align: center;
+     width: 100%;
  }
 
  .dropdown-menu li a {
      color: #f9f9f9;
      text-decoration: none;
      display: block;
+     width: 100%;
+     height: 100%;
  }
 
  .dropdown-menu li a:hover {
-     background-color: #ddd;
+     background-color: #f9f9f9;
+     border-radius: 2px;
+     color: black;
  }
