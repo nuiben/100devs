@@ -1,5 +1,7 @@
 /* Box Model Hack */
 * {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
      box-sizing: border-box;
 }
 
@@ -22,21 +24,148 @@
 /*******************************************/
 
 body {
-
+     font-family: 'Roboto', sans-serif;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
+     float: left;
+     height: 2000px;
+     width: 250px;
+     margin: 0;
 }
 
-footer {
+header img{
+     height: 110px;
+     width: 110px;
+}
 
+header h2{
+     margin: 0 0 10px 5%;
+}
+
+header h2 a{
+     color: #FDC006;
+     text-decoration: none;
+     font-size: 70%;
+}
+
+header > a{
+     text-decoration: none;
+     padding-left: 5%;
+}
+
+main * {
+     float: left;
+     width: 100%;
+}
+
+main h1 {
+     font-weight: bold;
+     font-size: 250%;
+}
+
+main span{
+     padding-bottom: 2%;
+}
+
+header li{
+     list-style: none;
+     padding: 10px 0;
+     font-size: 150%;
+}
+
+header nav input{
+     width: 75%;
+}
+
+header ul {
+     padding-left: 5%;
+}
+
+.top{
+     height: 550px;
+}
+
+section{
+     float: left;
+     width: 30%;
+}
+
+section ul {
+     margin: 5% 0 0 1%;
+     padding: 0 8%;
+     height: 550px;
+}
+
+section li {
+     list-style: none;
+}
+
+section h2{
+     height: 70%;
+     margin: 5% 0;
+}
+
+section li span{
+     margin-top: 16px;
+}
+
+hr{
+     margin: 2% 0;
+}
+
+main{
+     float: left;
+     width: 50%;
+}
+
+main img{
+     width: 100%;
+     max-height: 550px;
+}
+
+section.scrollers {
+     margin: 2% 0;
+     padding-top: 5%;
+     width: 80%;
+}
+
+.scrollers ul {
+     padding: 0;
+}
+
+strong {
+     font-size: 130%;
+}
+
+.column {
+     float: left;
+     width: 33.3333%;
+     height: 100%;
+}
+
+.scrollers .column img {
+     width: 100%;
+     padding: 2%;
+}
+
+.scrollers h2 {
+     padding-right: 8%;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 1200px) {
+     .desktop{
+          display: none;
+     }
+     header{
+          width: 100%;
+          height: 80px;
+     }
+   }
