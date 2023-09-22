@@ -4,15 +4,55 @@
     	<meta charset="utf-8">
     	<meta name="description" content="Your description goes here">
     	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Blank Template</title>
+		<title>100Devs HW: Khan Academy Layout w/ CSS</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">
 	</head>
 	<body>
-
+		<header>
+			<nav>
+				<div class="dropdown">
+					<button class="dropdown-toggle">Courses &#9660;</button>
+					<ul class="dropdown-menu">
+						<li><a href="https://www.papajohns.com/">Differential Equations</a></li>
+						<li><a href="https://www.papajohns.com/">Macroeconomics</a></li>
+						<li><a href="https://www.papajohns.com/">Linear Algebra</a></li>
+					</ul>
+				</div>
+				<form action="">
+					<input type="text" placeholder="Search">
+				</form>
+				<h2>🌱Khan Academy</h2>
+				<ul>
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Signup</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="clear">
+			<img src="assets\images\khan.png" alt="kids learning">
+		</section>
+		<section>
+			<h1>For every student, every classroom. Real results,</h1>
+			<p>real ingredients, Papa John's. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quod eum saepe minima rem illum labore eveniet, animi.</p>
+			<nav>
+				<a href="https://www.papajohns.com/">Learners</a>
+				<a href="https://www.papajohns.com/">Teachers</a>
+				<a href="https://www.papajohns.com/">Districts</a>
+				<a href="https://www.papajohns.com/">Parents</a>
+			</nav>
+		</section>
+		<footer class="clear">
+			<h2>Why Khan Academy works</h2>
+		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
