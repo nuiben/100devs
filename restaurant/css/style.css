@@ -1,28 +1,52 @@
 /* Box Model Hack */
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
-	clear: both;
+clear: both;
 }
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
+a {
+  text-decoration: none;
+  color: #0D0D25;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
 
 body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F2F6F7;
+  color: #0D0D25;
+}
 
+.button {
+  color: #F2F6F7;
+  background-color: #FF8800;
+  padding: 10px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 
