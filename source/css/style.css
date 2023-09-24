@@ -88,20 +88,122 @@ section#features{
 
 .top {
   width: 50%;
-  height: 600px;
+  height: 400px;
   float: left;
-  border: solid 1px #2C4458;
+}
+
+.top p{
+  margin-top: 15px;
+}
+h1 {
+  font-size: 240%;
 }
 
 #devices{
+  overflow: hidden;
+}
+
+#devices > img{
   float: right;
+  width: 100%;
+  overflow: hidden;
+  max-height: 400px;
+  max-width: 525px;
+}
+
+form{
+  height: 40px;
+}
+
+form * {
+  float: left;
+  height: 40px;
+}
+
+input{
+  background-color: #E2EAF0;
+  border: none;
+  color: #97AABB;
+}
+
+header + section {
+  padding: 40px 120px 0 60px;
+}
+
+header + section + section + section{
+  width: 100%;
+  padding: 0 10%;
+}
+
+section > section {
+  float: left;
+  width: 25%;
+}
+
+section > section h2 {
+  font-size: 108%;
+}
+
+section#features{
+  float: left;
+  width: 100%;
+  margin: 6% 0;
+}
+
+section#info{
+  width: 100%;
+  height: 400px;
+  float: left;
+  background-color: white;
+  padding: 3% 40px;
+}
+
+#info h2 {
+  padding: 0 70% 0 40px;
+  font-size: 240%;
+}
+
+#info p {
+  padding: 0 60% 0 40px;
+}
+
+div#generic {
+  width: calc(100% - 80px);
+  height: 80px;
+  padding: 0 40px;
+  margin: 0 40px;
+  background-color: #E2EAF0;
+  color: #E2EAF0;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media screen and (max-width: 1200px) {
-  .desktop{
-       float: none;
+@media screen and (max-width: 1000px) {
+  header nav, header div{
+       display: none;
+  }
+  header h2 {
+    width: 100%;
+    margin: 12px;
+    text-align: center;
+  }
+
+  header{
+    border-bottom: solid 1px #97AABB;
+    height: 10%;
+  }
+
+  header + section#tagline, #devices, form *{
+    width: 100%;
+  }
+
+  form div {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  #features, #info{
+    display: none;
   }
 }
