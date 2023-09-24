@@ -22,6 +22,10 @@ clear: both;
 /******************************************
 /* BASE STYLES
 /*******************************************/
+.fa-brands, .fa-solid {
+  color: #FF8800;
+}
+
 a {
   text-decoration: none;
   color: #0D0D25;
@@ -29,6 +33,7 @@ a {
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 ul {
@@ -41,10 +46,20 @@ body {
   color: #0D0D25;
 }
 
+span{
+  color: #FF8800;
+}
+
+h2{
+  font-size: 240%;
+  margin: 0;
+}
+
 .button {
+  height: 40px;
   color: #F2F6F7;
   background-color: #FF8800;
-  padding: 10px 25px;
+  padding: 10px 20px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -53,14 +68,312 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* Header Row */
+
+header, header > * {
+  height: 50px;
 }
 
-footer {
-
+nav{
+  width: 60%;
+  float: right;
+}
+nav ul li{
+  float: left;
+  width: 12%;
 }
 
+header div.empty {
+  width: 40%;
+  float: right;
+}
+nav ul{
+  width: 100%;
+}
+
+nav li a{
+  text-align: center;
+}
+
+body > section{
+  width: 100%;
+  height: 400px;
+}
+/* Main Section */
+
+main {
+  height: 400px;
+  background-image: url("../assets/fruit-bowl.png");
+  background-size: cover;
+}
+
+main > *{
+  width: 100%;
+  padding-right: 40%;
+  padding-left: 6%;
+  float: left;
+}
+
+main > h1{
+  font-size: 350%;
+  padding: 20px 50% 0 6%;
+}
+
+main > form > input{
+  height: 40px;
+  width: 70%;
+}
+
+main > form > *{
+  float: left;
+  height: 40px;
+}
+
+main > form > div > a{
+  float: left;
+}
+
+main > ul > li{
+  width: 33.3333%;
+  float: left;
+}
+
+
+/* Section 2 */
+main + section {
+  background-image: url("../assets/pie-breakfast.png");
+  background-size: cover;
+  padding: 10px 0;
+}
+
+main + section > *{
+  width: 100%;
+  padding-right: 12%;
+  padding-left: 43%;
+  float: right;
+}
+
+main + section .button{
+  border-radius: 5px;
+}
+
+/* Section 3 */
+main + section + section{
+  height: 540px;
+  padding: 10px 0;
+}
+
+main + section + section > *:not(div){
+  width: 100%;
+  padding: 0px 5%;
+  float: left;
+  text-align: center;
+}
+
+main + section + section > nav{
+  padding: 10px 20% 0;
+}
+
+main + section + section > nav ul{
+  width: 100;
+  overflow: auto;
+}
+
+main + section + section > nav ul li{
+  float: left;
+  width: 20%;
+}
+main + section + section > div{
+  height: 100%;
+  float: left;
+  width: 100%;
+  overflow: auto;
+  padding: 5% 10% 0;
+}
+
+main + section + section > div > section.rectangle{
+  width: 20%;
+  height: 400px;
+  height: 65%;
+  float: left;
+  /* background-color: #c6c6e5; */
+  border: solid 1px gray;
+  margin-right: 5%;
+  background-size: cover; /* Ensures the image covers the entire rectangle */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image from repeating */
+}
+
+div > section.rectangle.image1 > span{
+  color: #F2F6F7;
+  font-size: 120%;
+}
+
+div > section.rectangle.image1 > span:first-child{
+  font-weight: bold;
+  margin-top: 40%;
+}
+
+div > section.rectangle.image1 > div{
+  overflow: auto;
+  height: 40px;
+  padding: 0 5%;
+}
+
+div > section.rectangle.image1 > div a{
+  float: left;
+  width: 100%;
+}
+
+.rectangle.image1 {
+  position: relative;
+  /* filter: brightness(60%); */
+}
+
+.rectangle.image1::before {
+  content: ""; /* Required for the pseudo-element to show */
+  position: absolute; /* Absolute positioning will place it relative to its parent (.rectangle) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; /* These values stretch the pseudo-element to cover its parent entirely */
+
+  /* Move the background image from .rectangle to this pseudo-element */
+  background-image: url('../assets/image1.png'); /*TODO - Give credit - Anh Nguyen https://unsplash.com/@pwign */
+  background-size: cover;
+  background-position: center;
+
+  /* Apply the filter here */
+  filter: brightness(60%);
+
+  /* Ensure the pseudo-element sits below other content in the .rectangle */
+  z-index: -1;
+}
+
+.rectangle.image1 > *{
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+.rectangle.image1 > img{
+  padding: 0 28%;
+}
+
+.rectangle.image1 > div *{
+  border-radius: 5px;
+}
+
+.rectangle.image2 {
+  background-image: url('../assets/image2.png'); /*TODO - Give credit - Chad Montano https://unsplash.com/@briewilly */
+}
+
+.rectangle.image3 {
+  background-image: url('../assets/image3.png'); /*TODO - Give credit - Chad Montano https://unsplash.com/@briewilly */
+}
+
+.rectangle.image4 {
+  background-image: url('../assets/image4.png'); /*TODO - Give credit - Casey Lee https://unsplash.com/@simplethemes */
+}
+
+
+main + section + section > div > section:last-child{
+  margin-right: 0;
+}
+main + section + section > section > *{
+  float: left;
+}
+
+/* Section 4 */
+
+#section-3{
+  height: 940px;
+  padding: 10px 0;
+  background-image: url(../assets/mug.png);
+  background-size: cover;
+
+}
+#section-3 > *{
+  width: 100%;
+  padding: 10px 5%;
+  float: left;
+  text-align: center;
+}
+
+#section-3 a > i{
+  margin: 50px 0 20px;
+}
+
+#section-3 a > span{
+  font-weight: bold;
+}
+
+#section-3 video{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-image: url('../assets/video.png');
+  background-size: cover;
+}
+
+#section-3 video::-webkit-media-controls-start-playback-button {
+  display: none;
+}
+
+/* Section 4: Testimonials */
+
+#testimonials{
+  height: 500px;
+  padding: 10% 0;
+}
+
+#testimonials > *{
+  margin: 10px 0;
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+
+#testimonials > article{
+  height: 400px;
+  overflow: auto;
+  background-image: url('../assets/quote.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#testimonials > article > *{
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+}
+
+#testimonials > article > div{
+  width: 80px;
+  height: 80px;
+  margin: 0 calc(50% - 40px);
+  border-radius: 50%;
+  background-image: url('../assets/customer.png');
+  background-position: center;
+  background-size: contain;
+}
+
+#testimonials > article > img{
+  width: 100%;
+  padding: 0 45%;
+}
+
+#testimonials > article > span:first-of-type{
+  margin-top: 10px;
+  font-size: 150%;
+  color: #0D0D25;
+}
+
+#testimonials > article > span + span{
+  color: rgb(171, 171, 171);
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

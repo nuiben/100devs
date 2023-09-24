@@ -29,19 +29,22 @@
 					<li><a href="#"><img src="#" alt="search"></a></li>
 				</ul>
 			</nav>
+			<div class="empty">
+				<br>
+			</div>
 		</header>
 		<main>
 			<h1>Welcome To Our Cuisine Restaurant</h1>
 			<form action="">
-				<input type="text" placeholder="Placeholder">
+				<input type="text" placeholder="Search here">
 				<div>
 					<a class="button" href="#">Location</a>
 				</div>
 			</form>
 			<ul>
-				<li><a href="#">252K</a></li>
-				<li><a href="#">62K</a></li>
-				<li><a href="#">55K</a></li>
+				<li><a href="#"><i class="fa-brands fa-facebook"></i>252K</a></li>
+				<li><a href="#"><i class="fa-brands fa-twitter"></i>62K</a></li>
+				<li><a href="#"><i class="fa-brands fa-instagram"></i>55K</a></li>
 			</ul>
 		</main>
 		<section>
@@ -65,29 +68,31 @@
 					<li><a href="#">Shake</a></li>
 				</ul>
 			</nav>
-			<section>
-				<span>$14.99</span>
-				<img src="#" alt="5 star review">
-				<span>Contadina</span>
-				<div>
-					<a class="button" href="#">Order Now</a>
-				</div>
-			</section>
-			<section>
-				<img src="#" alt="health food bowl">
-			</section>
-			<section>
-				<img src="#" alt="egg over toast">
-			</section>
-			<section>
-				<img src="#" alt="sunny side up egg on toast">
-			</section>
+			<div>
+				<section class="rectangle image1">
+					<span>$14.99</span>
+					<img src="assets/five-star.png" alt="5 star review">
+					<span>Contadina</span>
+					<div>
+						<a class="button" href="#">Order Now</a>
+					</div>
+				</section>
+				<section class="rectangle image2">
+					<br>
+				</section>
+				<section class="rectangle image3">
+					<br>
+				</section>
+				<section class="rectangle image4">
+					<br>
+				</section>
+			</div>
 		</section>
-		<section>
+		<section id="section-3">
 			<span>Book Table</span>
 			<h2>Opening Hours</h2>
 			<a href="#">
-				<img src="#" alt="phone icon">
+				<i class="fa-solid fa-phone fa-2xl"></i>
 				<p>Call Now</p>
 				<span>+12345 678 910</span>
 			</a>
@@ -100,21 +105,24 @@
 				<span>11:00am - 20:00pm</span>
 			</section>
 			<div>
-				<video href="#"></video>
+				<video preload="none" controls poster="assets/play.png">
+					<source src="assets/restaurant.mp4" type="video/mp4">
+					<span>Video tag not supported by your browser.</span>
+				</video>
 			</div>
 		</section>
-		<section>
+		<section id="testimonials">
 			<span>Testimonials</span>
 			<h2>Customers Say</h2>
 			<article>
-				<img href="#" alt="customer face">
-				<span>Mr John Smith</span>
-				<span>Art Director</span>
-				<img href="#" alt="5 star review">
-				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni nisi tempore repudiandae similique provident voluptates sit harum, aspernatur laborum quas dolore distinctio unde. Eum, aliquam minima non maxime est quos.</p>
+				<div></div>
+				<span>Mr Kevin Malone</span>
+				<span>Chili Director</span>
+				<img src="assets/five-star.png" alt="5 star review">
+				<p><i>Why waste time say lot word when few word do trick?<i></p>
 			</article>
 		</section>
-
+		<script src="https://kit.fontawesome.com/6e025d388f.js" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
