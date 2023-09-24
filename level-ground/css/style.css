@@ -1,0 +1,271 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, header + section {
+  color: #F1F1F1;
+  background-color: #66768A;
+  width: 100%;
+  height: 65px;
+  font-size: 110%;
+}
+
+body > section {
+  width: 100%;
+}
+
+body > section + section + section {
+  background-color: #DBDFE2;
+  height: 700px;
+}
+
+body > section > div{
+  width: 50%;
+  padding: 0 10%;
+  margin: 0;
+  float: left;
+}
+
+body > section + section + section + section {
+  background-color: #F1F1F1;
+  height: 400px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  width: 50%;
+  list-style: none;
+}
+
+header ul li a {
+  width: 100%;
+}
+
+header a {
+  color: #F1F1F1;
+  text-decoration: none;
+}
+
+header > div + div {
+  padding: 5px 2%;
+}
+
+header > div > a {
+  background-color: #F1F1F1;
+  color: #66768A;
+  width: 40%;
+  border-radius: 5px;
+}
+
+header + section {
+  height: 400px;
+}
+
+header *{
+  float: left;
+  width: 17.5%;
+}
+
+header div img {
+  margin: 0 50%;
+  margin: 0 calc(50% - 32px);
+}
+
+body > section {
+  float: left;
+  padding: 5% 0 0 0;
+}
+
+body > section > * {
+  padding: 0 22.5%;
+}
+
+body > section > a {
+  padding: 0 42%;
+}
+
+body > section > a > *{
+  float: left;
+  transform: translate(64px);
+}
+
+body > section > a > p{
+  margin: 0;
+  width: 50%;
+}
+
+body > header + section + section {
+  padding: 5% 0;
+}
+
+section h1{
+  margin: 0;
+  font-size: 350%;
+}
+
+section h2{
+  font-size: 200%
+}
+
+section > h2 + p {
+  padding: 0 35%;
+}
+
+section > a {
+  width: 100%;
+  float: left;
+}
+
+body > section > a > img {
+  height: 32px;
+  width: 32px;
+}
+
+body > section > div > img {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 400px;
+  background-color: #171F2A;
+}
+
+footer > section {
+  width: 90%;
+  margin: 5px 5%;
+  color: white;
+}
+
+footer > section > div {
+  float: left;
+  width: 50%;
+  padding-right: 35%;
+}
+
+footer > section > div + div {
+  padding: 0 0 0 35%;
+  text-align: left;
+  line-height: 50%;
+}
+
+header img{
+  height: 64px;
+  width: 64px;
+  float: none;
+}
+
+.top {
+  border-bottom: solid 1px rgb(117, 117, 117);
+  height: 75%;
+  padding-top: 2%;
+}
+
+ul.icons > li{
+  float: left;
+  width: 33.3333%;
+  list-style: none;
+}
+
+ul.links > li{
+  float: left;
+  width: 50%;
+  list-style: none;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #F1F1F1;
+}
+
+.logo.container {
+  width: 65%;
+  height: 100%;
+}
+
+.fake-button{
+  border: solid 1px rgb(117, 117, 117);
+  text-decoration: none;
+  color: #171F2A;
+  padding: 8px 48px;
+  width: 100%;
+  height: 50px;
+  float: left;
+}
+
+.button.container{
+  width: 100%;
+  height: 50px;
+  padding: 0 30%;
+}
+
+.bottom{
+  padding: 0;
+  text-align: left;
+}
+
+.bottom > *{
+  float: left;
+}
+
+.bottom > p {
+  padding: 5px 0;
+  width: 85%;
+  margin: 0;
+}
+
+.bottom > img {
+  width: 32px;
+  float: right;
+}
+
+.icons img {
+  width: 64px;
+}
+
+.dark{
+  color: #66768A;
+  text-align: left;
+  float: left;
+  width: 100%;
+}
+#volunteer{
+  width: 100%;
+  padding: 0 35%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
