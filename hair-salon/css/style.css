@@ -147,6 +147,41 @@ div > a{
   float: left;
 }
 
+main + section > section{
+  float: left;
+  height: 250px;
+  width: 18.3333%;
+  margin: 5% 5% 5% 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main + section > section:first-child{
+  margin-left: 17.5%;
+}
+
+main + section > section:last-child{
+  margin-right: 17.5%;
+}
+
+main + section + section {
+  float: left;
+  background-color: #F3F4F6;
+  padding: 5% 15% 0;
+}
+
+main + section + section > section{
+  float: left;
+  width: 50%;
+}
+
+main + section + section > section video{
+  margin-top: 5%;
+  position: relative;
+  width: 100%;
+  background-image: url('../assets/video.png');
+  background-size: cover;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
