@@ -123,6 +123,8 @@ main > h1{
 main > form > input{
   height: 40px;
   width: 70%;
+  border-radius: 5px;
+  border-color: #a9a9a9;
 }
 
 main > form > *{
@@ -135,7 +137,7 @@ main > form > div > a{
 }
 
 main > ul > li{
-  width: 33.3333%;
+  width: 20%;
   float: left;
 }
 

@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+.fa-brands, .fa-solid {
+  color: #413f3d;
+}
+
+a {
+  text-decoration: none;
+  color: #0D0D25;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  color: #0D0D25;
+}
+
+span{
+  color: #060606;
+}
+
+h2{
+  font-size: 240%;
+  margin: 0;
+}
+
+.button {
+  height: 40px;
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.button.inverse {
+  color: black;
+  background-color: white;
+}
+
+.container{
+  width: 200px;
+  height: 220px;
+  background-color: black;
+  margin: 20px 0 0 10%;
+  padding: 30px 20px 0;
+}
+
+.container > *{
+  float: left;
+  color: white;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+
+.container b{
+  font-size: 150%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Header Row */
+header {
+  width: 100%;
+  height: 50px;
+}
+
+header > *{
+  text-transform: uppercase;
+  height: 50px;
+  width: 10%;
+  float: left;
+}
+
+header > nav{
+  width: 70%;
+  padding: 0 8%;
+}
+header li{
+  height: 50px;
+  float: left;
+  width: 11%;
+  font-size: 80%;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+header li:last-child{
+  margin: 0;
+}
+
+/* Main */
+
+main{
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+  background-image: url('../assets/pink-blue-highlights.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+}
+
+main > *{
+  float: left;
+  width: 100%;
+  padding: 0 40% 0 10%;
+  margin: 10px 0;
+  color: white;
+  overflow: auto;
+}
+
+div > a{
+  float: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
