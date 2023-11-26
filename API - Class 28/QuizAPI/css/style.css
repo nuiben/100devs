@@ -1,0 +1,27 @@
+body{
+    background-color: #f1f1f1;
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+.btn:hover{
+    background-color: rgb(242, 238, 238);
+}
+
+
+.bg-dark{
+    background-color: black;
+    color: #f1f1f1;
+}
+
+.error{
+    background-color: orangered;
+    color: #f1f1f1;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    text-align: center;
+    border: solid 1px rgb(225, 213, 213);
+}
