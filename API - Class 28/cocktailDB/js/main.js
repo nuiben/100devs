@@ -34,9 +34,12 @@ function createCarouselItems(items) {
       const carouselItem = document.createElement('div');
       carouselItem.className = 'carousel-item' + (index === 0 ? ' active' : '');
       const image = document.createElement('img');
+      const instructions = document.createElement('h3')
       image.src = item.strDrinkThumb;
       image.alt = item.strDrink;
       carouselItem.appendChild(image);
+      carouselItem.appendChild(instructions);
+      instructions.innerText = item.strInstructions;
       carouselContainer.appendChild(carouselItem);
     });
 }
