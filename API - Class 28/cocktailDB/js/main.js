@@ -36,8 +36,6 @@ function createCarouselItems(items) {
       const image = document.createElement('img');
       image.src = item.strDrinkThumb;
       image.alt = item.strDrink;
-    //   document.querySelector('h2').innerText = image.alt;
-
       carouselItem.appendChild(image);
       carouselContainer.appendChild(carouselItem);
     });
@@ -58,6 +56,8 @@ function showNextItem() {
 
   // Add 'active' class to next item
   items[index].classList.add('active');
+  console.log(items[index].firstChild)
+  document.querySelector('h2').innerText = items[index].firstChild.alt;
 }
 
 // Set interval for carousel to change
