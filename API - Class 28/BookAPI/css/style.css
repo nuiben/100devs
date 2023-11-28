@@ -1,5 +1,10 @@
 body{
     background-color: #f1f1f1;
+    padding: 5% 20%;
+}
+
+body * {
+    text-align: center;
 }
 
 .btn{
