@@ -30,3 +30,9 @@ body * {
     text-align: center;
     border: solid 1px rgb(225, 213, 213);
 }
+
+button {
+    width: 20%;
+    margin: 0 40%;
+    padding: 1px;
+}
