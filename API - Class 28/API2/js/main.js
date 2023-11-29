@@ -1,13 +1,27 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
-
 function getFetch() {
-    const url = `https://corporatebs-generator.sameerkumar.website/`
+    const apiKey = '' // TODO: get your own key :) -> https://api.nasa.gov/
+    const choice = document.querySelector('input').value
+    console.log(choice)
+
+    const url = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${choice}`
+
     fetch(url)
-    .then(response => response.json())
-    .then(data => {
-        console.log(data)
-        document.querySelector('h2').innerText = data.phrase
-    })
-    .catch(error => console.error('Error:', error));
+        .then(res => res.json()) // parse response as JSON
+        .then(data => {
+            console.log(data)
+            if( data.media_type === 'image' ){
+            document.querySelector('img').src = data.hdurl
+            document.querySelector('iframe').src = ''
+            }else if(data.media_type === 'video'){
+            document.querySelector('img').src = ''
+            document.querySelector('iframe').src = data.url
+            }
+
+            document.querySelector('h3').innerText = data.explanation
+        })
+        .catch(err => {
+            console.log(`error ${err}`)
+        });
 }
