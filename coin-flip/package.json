@@ -8,5 +8,8 @@
     "start": "node server.js"
   },
   "author": "Ben Porter",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.7.0"
+  }
 }
